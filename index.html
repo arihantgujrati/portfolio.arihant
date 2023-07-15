@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arihant Gujrati portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d33679ee84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+         <nav> 
+             <img src="photo/portnewlogo.png"  class="logo">
+            <ul> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p>Web Designer...</p>
+        <h1> Hi, I am <br> <span>Arihant Gujrati</span> </h1>
+    </div>
+    <!-- ----------------about----------------- -->
+    <div id="About"> 
+        <div class="container">
+            <div class="row">
+            <div class="about-col1">
+                <img src="photo/IMG_20210415_122033_078.jpg"  width="300px">
+                
+            </div>  
+
+            <div class="about-col2">
+                <h1 class="sub-title"> About Me </h1>
+                <p> Hi am Arihant Gujrati. am 4th year student of B.Tech (computer science & engineering) in Mandsaur University. I have knowledge of html,css,java script,pyhton,c,c++ etc.  </p>
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills </p> 
+                    <p class="tab-links" onclick="opentab('experience')">Experience </p> 
+                    <p class="tab-links" onclick="opentab('education')">Education</p>    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul> 
+                        <li> <span>W</span>eb Designing</li>
+                        <li> <span>A</span>pp Development</li>
+                        <li> <span>P</span>ython</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul> 
+                        <li> <span>2023</span> -current study in Mandsaur University</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul> 
+                        <li> <span>2023</span>- current study in Mandsaur University</li>
+                    </ul>
+                </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+    <!-- ----------------services--------------- -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="Services-list">
+                
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p>web design</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>ui design and ux design</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-adn"></i>
+                    <h2> App Design</h2>
+                    <p>app design</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+
+            </div> 
+
+        </div>
+     
+    </div>
+    <!-- my portfoliyo -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work </h1>  
+            <div class="work-list">
+               <div class="work">
+                <img src="photo/work port.jfif">
+                <div class="layer">
+                    <h3> Social Media App </h3>
+                    <p>Lorem ipsum dolor sit ametkjdfvhhe;vhr;vbhr toighgtiohogg tiohi3oihgo oiggirogi'g wtrt'oghwghw .</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+               </div>  
+               <div class="work">
+                <img src="photo/work2port.jfif">
+                <div class="layer">
+                    <h3> Web Designer</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur fjkvafjkdgbgbev ekrghueerkgvwevueive urrhqweuergereuwerevie.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+               </div>  
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablinks.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            dacument.getElementbyId(tabname).classList.add("active-tab")
+        }
+       </script>
+    
+</body>
+</html>
